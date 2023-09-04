@@ -9,8 +9,3 @@ class Offer(models.Model):
     added_at = models.DateTimeField(auto_now_add=True)
     keep = models.BooleanField(default=False)
     photo = models.ImageField()
-
-
-class TelegramUser(models.Model):
-    username = models.CharField(max_length=32)
-    chat_id = models.CharField(max_length=128)
